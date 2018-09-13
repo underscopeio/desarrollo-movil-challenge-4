@@ -4,10 +4,10 @@ Para poder resolver este challenge seguir los siguientes pasos
 
 1. Clonar este repositorio
 1. Una vez clonado, dentro de la carpeta del proyecto correr `yarn` o `npm install` para instalar las dependencias necesarias
-1. Correr el proyecto usando `exp start`
-1. Resolver el enunciado
 1. Hacer un **nuevo branch** con tu nombre y apellido para identificarte (ej. `git checkout -b gonzalo-aguirre`)
-1. Hacer un **commit** y un **push** del mismo en el nuevo branch
+1. Correr el proyecto usando `exp start`
+1. Resolver el enunciado, **haciendo un nuevo commit al resolver cada parte**
+1. Hacer un **push** del nuevo branch
 1. Desde **github.com** crear un nuevo **pull request** desde ese branch hacia master
 
 ### Enunciado
@@ -39,3 +39,9 @@ Aplicar ese estilo a todo la tarjeta, sin perder los estilos de `container`.
 Crear un **nuevo estilo** dentro del `StyleSheet` ya existente que se llame `textoChico` y que se aplique en caso de que se estén mostrando tanto el nombre como el apellido.
 
 Este estilo debe aplicarse de manera que no se pierdan los estilos ya definidos en `texto`.
+
+#### Estilos via props
+
+Agregar una prop `style` al componente de `Tarjeta.js`. Ese estilo deberá ser aplicado a nuestro elemento contenedor, siempre manteniendo el estilo ya aplicado.
+
+Modificar el archivo `App.js`, pasando un estilo que aplique un margen de 10 a nuestra tarjeta.
