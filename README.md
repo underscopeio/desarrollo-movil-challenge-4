@@ -1,0 +1,41 @@
+## Challenge 4 del curso de Desarrollo Móvil de Coderhouse
+
+Para poder resolver este challenge seguir los siguientes pasos
+
+1. Clonar este repositorio
+1. Una vez clonado, dentro de la carpeta del proyecto correr `yarn` o `npm install` para instalar las dependencias necesarias
+1. Correr el proyecto usando `exp start`
+1. Resolver el enunciado
+1. Hacer un **nuevo branch** con tu nombre y apellido para identificarte (ej. `git checkout -b gonzalo-aguirre`)
+1. Hacer un **commit** y un **push** del mismo en el nuevo branch
+1. Desde **github.com** crear un nuevo **pull request** desde ese branch hacia master
+
+### Enunciado
+
+Todos los cambios necesarios deben hacerse sobre el archivo `Tarjeta.js`
+
+#### Estilos múltiples
+
+Crear un **nuevo estilo** dentro del `StyleSheet` ya existente que se llame `conSombra` con los siguientes valores
+
+```js
+{
+  shadowColor: 'black',
+  shadowOffset: {
+    height: 1,
+    width: 1,
+  },
+  shadowRadius: 1.5,
+  shadowOpacity: 0.5,
+  elevation: 2,
+  padding: 10,
+}
+```
+
+Aplicar ese estilo a todo la tarjeta, sin perder los estilos de `container`.
+
+#### Estilos condicionales
+
+Crear un **nuevo estilo** dentro del `StyleSheet` ya existente que se llame `textoChico` y que se aplique en caso de que se estén mostrando tanto el nombre como el apellido.
+
+Este estilo debe aplicarse de manera que no se pierdan los estilos ya definidos en `texto`.
