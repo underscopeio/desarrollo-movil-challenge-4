@@ -24,14 +24,14 @@ export default class Card extends Component {
       </View>
       /* 
       <View style={[styles.container, styles.conSombra].concat(style)}>
-      Esto seria para cuando queres pasarle todos los styles del padre. Usas concat 
-      */
+      Esto seria para cuando queres pasarle todos los styles del padre. Usas concat */
     )
   }
 }
 
 const styles = StyleSheet.create({
   container: {
+    //flex: 1,
     width: 300,
     height: 200,
     backgroundColor: '#F5FCFF',
@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
 
   textoChico: {
     textAlign: 'center',
-    fontSize: 38,
+    fontSize: 18,
   },
 
 })
