@@ -11,13 +11,13 @@ export default class Card extends Component {
   }
 
   render() {
-    const { nombre, apellido } = this.props
+    const { nombre, apellido, cardMargin } = this.props
     const { soloNombre } = this.state
 
     const texto = soloNombre ? nombre : `${nombre} ${apellido}`
 
     return (
-      <View style={[styles.container, styles.conSombra]}>
+      <View style={[styles.container, styles.conSombra, cardMargin]}>
         <Text style={[styles.texto, (soloNombre ? '' : styles.textoChico)]}>{texto}</Text>
         <Button title={soloNombre ? 'Mostrar nombre completo' : 'Mostrar sólo nombre'} onPress={this.handlePress} />
       </View>
