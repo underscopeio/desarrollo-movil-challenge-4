@@ -11,13 +11,13 @@ export default class Card extends Component {
   }
 
   render() {
-    const { nombre, apellido } = this.props
+    const { nombre, apellido, style } = this.props
     const { soloNombre } = this.state
 
     const texto = soloNombre ? nombre : `${nombre} ${apellido}`
 
     return (
-      <View style={ [styles.container, styles.conSombra] }>
+      <View style={ [styles.container, styles.conSombra].concat(style) }>
         <Text style={[styles.texto, styles.textoChico]}>{texto}</Text>
         <Button title={soloNombre ? 'Mostrar nombre completo' : 'Mostrar sólo nombre'} onPress={this.handlePress} />
       </View>
@@ -26,13 +26,6 @@ export default class Card extends Component {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    width: 300,
-    height: 200,
-    backgroundColor: '#F5FCFF',
-    justifyContent: 'space-between',
-  },
-
   texto: {
     textAlign: 'center',
     fontSize: 48,
