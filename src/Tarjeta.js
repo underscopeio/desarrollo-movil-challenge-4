@@ -66,6 +66,7 @@ const styles = StyleSheet.create({
     padding: 10
   },
   agregarMargen: {
-    margin: 50
+    margin: 25,
+    backgroundColor: "#ffff00"
   }
 });

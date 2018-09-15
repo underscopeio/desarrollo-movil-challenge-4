@@ -7,7 +7,7 @@ export default class App extends React.Component {
     return (
       <View style={styles.container}>
         <Tarjeta nombre="Nicolas" apellido="Bergues" agregarMargen />
-        <Tarjeta nombre="Nico 2" apellido="Bergues" agregarMargen={false} />
+        <Tarjeta nombre="Nicolas" apellido="Bergues" agregarMargen={false} />
       </View>
     );
   }
