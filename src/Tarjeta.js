@@ -21,7 +21,7 @@ export default class Card extends Component {
     return (
     
 
-    <View style={[styles.container, styles.conSombra, estilo}>
+    <View style={[styles.container, styles.conSombra, estilo]}>
         
         <Text style={soloNombre ? styles.texto : styles.textoChico } > {texto} </Text>
         
