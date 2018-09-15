@@ -6,6 +6,8 @@ export default class Card extends Component {
     soloNombre: false
   };
 
+  style = {};
+
   handlePress = () => {
     this.setState({ soloNombre: !this.state.soloNombre });
   };
@@ -17,7 +19,7 @@ export default class Card extends Component {
     const texto = soloNombre ? nombre : `${nombre} ${apellido}`;
 
     return (
-      <View style={styles.container}>
+      <View style={(styles.container, style.conSombra, style.textoChico)}>
         <Text style={styles.texto}>{texto}</Text>
         <Button
           title={soloNombre ? "Mostrar nombre completo" : "Mostrar sólo nombre"}
