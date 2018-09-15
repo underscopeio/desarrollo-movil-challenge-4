@@ -33,11 +33,11 @@ Crear un **nuevo estilo** dentro del `StyleSheet` ya existente que se llame `con
 }
 ```
 
-Aplicar ese estilo a todo la tarjeta, sin perder los estilos de `container`.
+Aplicar ese estilo a la `<View>` principal sin perder los estilos de `container`.
 
 #### Estilos condicionales
 
-Crear un **nuevo estilo** dentro del `StyleSheet` ya existente que se llame `textoChico` y que se aplique en caso de que se estén mostrando tanto el nombre como el apellido.
+Crear un **nuevo estilo** dentro del `StyleSheet` ya existente que se llame `textoChico` y que se aplique al `<Text>` en caso de que se estén mostrando tanto el nombre como el apellido.
 
 Este estilo debe aplicarse de manera que no se pierdan los estilos ya definidos en `texto`.
 
