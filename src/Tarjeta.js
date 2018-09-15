@@ -22,6 +22,10 @@ export default class Card extends Component {
         <Text style={[styles.texto, soloNombre && styles.textoChico]}>{texto}</Text>
         <Button title={soloNombre ? 'Mostrar nombre completo' : 'Mostrar sólo nombre'} onPress={this.handlePress} />
       </View>
+      /* 
+      <View style={[styles.container, styles.conSombra].concat(style)}>
+      Esto seria para cuando queres pasarle todos los styles del padre. Usas concat 
+      */
     )
   }
 }
