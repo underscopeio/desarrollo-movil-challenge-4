@@ -6,7 +6,7 @@ Para poder resolver este challenge seguir los siguientes pasos
 1. Una vez hecho el **fork**, hacer un clon copiando la URL (en el botón verde) y corriendo `gi clone <URL>` en la consola
 1. Una vez clonado, moverse dentro de la carpeta del proyecto y correr `npm install` (o `yarn`) para instalar las dependencias necesarias
 1. Hacer un **nuevo branch** con tu nombre y apellido para identificarte (ej. `git checkout -b gonzalo-aguirre`)
-1. Correr el proyecto usando `exp start`
+1. Correr el proyecto usando `expo start`
 1. Resolver el enunciado, **haciendo un nuevo commit al resolver cada parte**
 1. Hacer un **push** del nuevo branch
 1. Desde **github.com** crear un nuevo **pull request** desde ese branch hacia master
