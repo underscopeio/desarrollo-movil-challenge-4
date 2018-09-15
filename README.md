@@ -45,4 +45,4 @@ Este estilo debe aplicarse de manera que no se pierdan los estilos ya definidos 
 
 Agregar una prop `style` al componente de `Tarjeta.js`. Ese estilo deberá ser aplicado a nuestro elemento contenedor, siempre manteniendo el estilo ya aplicado.
 
-Modificar el archivo `App.js`, pasando un estilo que aplique un margen de 10 a nuestra tarjeta.
+Modificar el archivo `App.js` haciendo que muestre dos tarjetas en vez de una y pasando un estilo que aplique un margen de 10 a las tarjetas.
