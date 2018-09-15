@@ -38,4 +38,17 @@ const styles = StyleSheet.create({
     fontSize: 48,
     fontWeight: 'bold',
   },
+
+  conSombra: {
+    shadowColor: 'black',
+    shadowOffset: {
+      height: 1,
+      width: 1,
+    },
+    shadowRadius: 1.5,
+    shadowOpacity: 0.5,
+    elevation: 2,
+    padding: 10,
+  },
+  
 })
