@@ -6,7 +6,8 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Tarjeta nombre="Gonzalo" apellido="Aguirre" styles = {styles.margen10} />
+        <Tarjeta nombre="Homero" apellido="Simpson" style = {styles.margen10} />
+        <Tarjeta nombre="Marge" apellido="Simpson" style = {styles.margen10} />
       </View>
     )
   }
@@ -20,6 +21,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   margen10: {
+    padding: 10,
     margin: 10,
   }
 })

@@ -1,5 +1,9 @@
 import React, { Component } from 'react'
-import { StyleSheet, Text, View, Button } from 'react-native'
+import { StyleSheet, Text, View, Button, Dimensions } from 'react-native'
+
+const dimensions = Dimensions.get('window')
+const altura = dimensions.height
+const ancho = dimensions.width
 
 export default class Card extends Component {
   state = {
