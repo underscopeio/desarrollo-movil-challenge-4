@@ -6,8 +6,6 @@ export default class Card extends Component {
     soloNombre: false
   };
 
-  style = {};
-
   handlePress = () => {
     this.setState({ soloNombre: !this.state.soloNombre });
   };
