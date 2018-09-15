@@ -17,7 +17,7 @@ export default class Card extends Component {
     const texto = soloNombre ? nombre : `${nombre} ${apellido}`
 
     return (
-      <View style={[styles.container, styles.conSombra]}>
+      <View style={[styles.container, styles.conSombra, soloNombre && styles.textoChico]}>
         <Text style={styles.texto}>{texto}</Text>
         <Button title={soloNombre ? 'Mostrar nombre completo' : 'Mostrar sólo nombre'} onPress={this.handlePress} />
       </View>
@@ -51,5 +51,10 @@ const styles = StyleSheet.create({
     padding: 10,
   }
 
+  textoChico: {
+    textAlign: 'center',
+    fontSize: 38,
+    fontWeight: 'bold',
+  },
 
 })
