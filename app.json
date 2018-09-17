@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "desarrollo-movil-challenge-4",
-    "description": "This project is really great.",
-    "slug": "desarrollo-movil-challenge-4",
+    "name": "desarrollo-movil-challenge-4-carlos",
+    "description": "CoderHouse Desafio1",
+    "slug": "desarrollo-movil-challenge-4-carlos",
     "privacy": "public",
     "sdkVersion": "30.0.0",
     "platforms": ["ios", "android"],
