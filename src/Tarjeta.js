@@ -11,18 +11,15 @@ export default class Card extends Component {
   };
 
   render() {
-    const { nombre, apellido } = this.props;
+    const { nombre, apellido, margen } = this.props;
     const { soloNombre } = this.state;
 
     const texto = soloNombre ? nombre : `${nombre} ${apellido}`;
 
     return (
-      <View style={[styles.container, style.conSombra]}>
+      [<View style={[styles.container, styles.conSombra, {margin:margen}]}>
         <Text
-          style={[
-            styles.texto,
-            this.state.soloNombre ? styles.texto : textoChico
-          ]}
+          style={[styles.texto, !this.state.soloNombre && styles.textoChico]}
         >
           {texto}
         </Text>
@@ -30,7 +27,17 @@ export default class Card extends Component {
           title={soloNombre ? "Mostrar nombre completo" : "Mostrar sólo nombre"}
           onPress={this.handlePress}
         />
-      </View>
+      </View>,
+      <View style={[styles.container, styles.conSombra, {margin:50}]}>
+        <Text
+          style={[styles.texto]}
+        >
+          Eulalio
+        </Text>
+        
+      </View>]
+
+
     );
   }
 }
@@ -61,8 +68,6 @@ const styles = StyleSheet.create({
   },
 
   textoChico: {
-    textAlign: "center",
-    fontSize: 24,
-    fontWeight: "bold"
+    fontSize: 24
   }
 });
