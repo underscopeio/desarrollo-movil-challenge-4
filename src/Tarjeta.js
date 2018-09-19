@@ -18,7 +18,7 @@ export default class Card extends Component {
 
     return (
       <View style={[styles.container, styles.conSombra, style]}>
-        <Text style={[styles.texto, (soloNombre ? '' : styles.textoChico)]}>{texto}</Text>
+        <Text style={[styles.texto, !soloNombre && styles.textoChico]}>{texto}</Text>
         <Button title={soloNombre ? 'Mostrar nombre completo' : 'Mostrar sólo nombre'} onPress={this.handlePress} />
       </View>
     )
