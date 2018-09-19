@@ -6,7 +6,7 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Tarjeta nombre="Gonzalo" apellido="Aguirre" />
+        <Tarjeta nombre="Nicolas" apellido="Roldan" />
       </View>
     )
   }
