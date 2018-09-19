@@ -7,7 +7,7 @@ export default class App extends Component {
     return (
         <View style={styles.container}>
           <Tarjeta nombre="Gonzalo" apellido="Aguirre" />
-          <Tarjeta nombre="Gonzalo" apellido="Aguirre" cardMargin={styles.margenCard}/>
+          <Tarjeta nombre="Gonzalo" apellido="Aguirre" style={styles.style}/>
         </View>
     )
   }
@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
       alignItems: 'center',
       justifyContent: 'center',
     },
-    margenCard: {
+    style: {
       margin: 10,
     },
 
