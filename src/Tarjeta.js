@@ -11,14 +11,14 @@ export default class Card extends Component {
   }
 
   render() {
-    const { nombre, apellido } = this.props
+    const { nombre, apellido, style } = this.props
     const { soloNombre } = this.state
 
     const texto = soloNombre ? nombre : `${nombre} ${apellido}`
 
     return (
-      <View style={styles.container}>
-        <Text style={styles.texto}>{texto}</Text>
+      <View style={[styles.container, styles.conSombra, style]}>
+        <Text style={[styles.texto, !soloNombre && styles.textoChico]}>{texto}</Text>
         <Button title={soloNombre ? 'Mostrar nombre completo' : 'Mostrar sólo nombre'} onPress={this.handlePress} />
       </View>
     )
@@ -37,5 +37,19 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     fontSize: 48,
     fontWeight: 'bold',
+  },
+  textoChico: {
+    fontSize: 25,
+  },
+  conSombra: {
+    shadowColor: 'black',
+    shadowOffset: {
+      height: 1,
+      width: 1,
+    },
+    shadowRadius: 1.5,
+    shadowOpacity: 0.9,
+    elevation: 10,
+    padding: 10,
   },
 })
